@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+
 import Navbar from './components/Navbar';
-import './index.css';
 import States from './States/States';
 
 // * React Component = sebuah function / class yang mereturn JSX
