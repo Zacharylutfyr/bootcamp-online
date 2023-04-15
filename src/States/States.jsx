@@ -1,11 +1,15 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react';
 
-class States extends Component {
-  render() {
-    return (
-   <h1>Zachayr</h1>
-    );
-  }
-}
+const States = () => {
+  const [statee, setState] = useState(98);
+  return (
+    <>
+      <h1>JUMLAH : {statee} </h1>
+      <button onClick={() => {
+        setState (2);
+      }}>Ubah</button>
+    </>
+  );
+};
 
 export default States;
