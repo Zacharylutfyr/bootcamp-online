@@ -6,6 +6,7 @@ const States = () => {
   const [range, setRange] = useState(20);
   const [color, setColor] = useState('oranged');
   const [pacarSaya, setpacarSaya] = useState(1);
+  const [genap, setGenap] = useState (0);
   const decrement = () => {
     setpacarSaya(prev => prev - 1);
   };
@@ -92,6 +93,12 @@ const States = () => {
             }}>
             Jangan Ganti Nama
           </button>
+        </div>
+        <div>
+          <h1>{genap}</h1>
+          <button onClick={()=>{
+            setGenap (genap + 2 );
+          }}>Bilangan Genap</button>
         </div>
       </div>
     </>
