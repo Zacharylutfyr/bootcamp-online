@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const States = () => {
   const [statee, setState] = useState(0);
   const [text, setText] = useState('ini Default Text');
-  const [range, setRange] = useState(16);
+  const [range, setRange] = useState(20);
   const [color, setColor] = useState('oranged');
+  const [pacarSaya, setpacarSaya] = useState(1);
+  const decrement = () => {
+    setpacarSaya(prev => prev - 1);
+  };
+  const increment = () => {
+    setpacarSaya(pacarSaya + 1);
+  };
+  const [name, setName] = useState('Zachary');
+
+  useEffect(() => {
+    alert('Halooo');
+  }, []);
 
   return (
     <>
@@ -58,6 +70,28 @@ const States = () => {
             onChange={e => {
               setColor(e.target.value);
             }}></input>
+        </div>
+
+        <div>
+          <h1>{pacarSaya}</h1>
+          <button onClick={decrement}> - </button>
+          <button onClick={increment}> + </button>
+        </div>
+
+        <div className='name'>
+          <h1>{name}</h1>
+          <button
+            onClick={() => {
+              setName('Luthfy');
+            }}>
+            Ganti Nama
+          </button>
+          <button
+            onClick={() => {
+              setName('Zachary');
+            }}>
+            Jangan Ganti Nama
+          </button>
         </div>
       </div>
     </>
