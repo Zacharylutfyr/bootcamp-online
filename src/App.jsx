@@ -1,6 +1,6 @@
 
-import Navbar from './components/Navbar';
-import States from './States/States';
+import Navbar from './components/Navbar/Navbar';
+import States from './components/States/States';
 
 // * React Component = sebuah function / class yang mereturn JSX
 // * 1. Namanya harus dimuai dengan huruf Kapital
