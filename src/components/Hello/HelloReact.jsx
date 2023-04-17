@@ -6,9 +6,9 @@ const HelloReact = () => {
     <>
       <div className='container'>
         <h1>Hello React !</h1>
-        <MyButton content={"Login"}/>
-        <MyButton content={"Register"}/>
-        <MyButton content={"Logout"}/>
+        <MyButton content={"Login"} bgColor={"black"} color={"pink"} />
+        <MyButton content={"Register"} bgColor={"pink"} color={"black"}/>
+        <MyButton content={"Logout"} bgColor={"black"} color={"pink"} />
       </div>
     </>
   );
