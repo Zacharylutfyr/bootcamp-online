@@ -9,8 +9,11 @@ const MyButton = props => {
           border: 'none',
           outline: 'none',
           color: props.color,
-          padding :'10px'
-        }}>
+          padding :'10px',
+          margin:'10px'
+        }}
+        onClick={props.onClick}
+        >
         {props.content}
       </button>
     </>

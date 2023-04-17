@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import MyButton from '../MyButton/MyButton';
 
 const States = () => {
   const [statee, setState] = useState(0);
@@ -108,6 +109,14 @@ const States = () => {
             }}>
             Reset
           </button>
+          <MyButton
+            content={'Register'}
+            bgColor={'pink'}
+            color={'black'}
+            onClick={() => {
+              alert('Kembali ke Login');
+            }}
+          />
         </div>
       </div>
     </>
