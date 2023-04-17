@@ -1,6 +1,6 @@
-
 import HelloReact from './components/Hello/HelloReact';
 import Navbar from './components/Navbar/Navbar';
+import ProductCard from './components/ProductCard/ProductCard';
 import States from './components/States/States';
 
 // * React Component = sebuah function / class yang mereturn JSX
@@ -13,8 +13,22 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <HelloReact/>
+      <HelloReact />
       <States />
+      <ProductCard
+        image={
+          'https://images.pexels.com/photos/843194/pexels-photo-843194.jpeg?auto=compress&cs=tinysrgb&w=600'
+        }
+        name={'Tas Wanita'}
+        price={'500.000'}
+      />
+      <ProductCard
+        image={
+          'https://images.pexels.com/photos/843194/pexels-photo-843194.jpeg?auto=compress&cs=tinysrgb&w=600'
+        }
+        name={'Wanita'}
+        price={'1.500.000'}
+      />
     </>
   );
 };

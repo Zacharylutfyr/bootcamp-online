@@ -37,3 +37,46 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+
+// * Product Card
+.productCard {
+  .container {
+    width: 450px;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: gray;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    .left-product {
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+      }
+    }
+    .right-product {
+      .inputs {
+        button {
+          padding: 5px;
+        }
+      }
+      .myButton {
+        color: #ffffff;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+      }
+    }
+  }
+}
