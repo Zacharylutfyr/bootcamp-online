@@ -1,4 +1,5 @@
 
+import HelloReact from './components/Hello/HelloReact';
 import Navbar from './components/Navbar/Navbar';
 import States from './components/States/States';
 
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <HelloReact/>
       <States />
     </>
   );
